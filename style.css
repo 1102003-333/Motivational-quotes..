@@ -1,0 +1,63 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e0f7fa;  /* الخلفية الفاتحة */
+    color: #263238;  /* اللون الداكن للنصوص */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    transition: background-color 0.3s, color 0.3s;  /* تأثير ناعم عند التبديل بين الأوضاع */
+}
+
+body.dark-mode {
+    background-color: #121212;  /* خلفية داكنة للوضع الليلي */
+    color: #ffffff;  /* نص أبيض للوضع الليلي */
+}
+
+.container {
+    text-align: center;
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s;  /* تأثير ناعم عند التبديل */
+}
+
+body.dark-mode .container {
+    background-color: #333333;  /* خلفية داكنة داخل العلبة للوضع الليلي */
+}
+
+#quote {
+    font-size: 24px;
+    margin: 20px 0;
+    color: #004d40;
+    font-style: italic;
+}
+
+body.dark-mode #quote {
+    color: #a7ffeb;  /* لون فاتح للنص داخل الوضع الليلي */
+}
+
+button {
+    background-color: #00897b;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #004d40;
+}
+
+body.dark-mode button {
+    background-color: #004d40;  /* لون الزر في الوضع الليلي */
+}
+
+body.dark-mode button:hover {
+    background-color: #00897b;  /* تأثير الزر في الوضع الليلي */
+}
